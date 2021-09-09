@@ -1,0 +1,167 @@
+body{
+  box-sizing: border-box;
+}
+p,a, ul{
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  width: 50%;
+  min-height: 80vh;
+  margin: 0 auto;
+  padding: 5% 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.table__content{
+  flex: 1 1 auto;
+  margin-bottom: 20px;
+}
+/* .table__user{
+  border: 3px solid purple;
+} */
+
+.table__column:nth-child(even) {
+  background-color: #8badec;
+}
+.table__column:nth-child(odd) {
+  background-color: #bebfc0;
+}
+
+.table__column:not(:first-child):hover{
+  background-color:rgb(202, 161, 161);
+  cursor: pointer;
+}
+
+td{
+  padding-bottom: 10px;
+}
+.table__date{
+  padding: 5px 12px;
+}
+.titels__item{
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+}
+
+.table__btn-sorting{
+  margin-left: 8px;
+  padding: 1px 3px 3px 3px;
+  border:  1px #bebfc0 solid;
+  border-radius: 20%;
+  background-color: #bebfc0;
+  cursor: pointer;
+}
+.table__btn-sorting:hover{
+  border: 1px rgb(129, 125, 125) solid;
+  background-color: #bebfc0;
+}
+
+#about{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.3em;
+  height: 1.9em;
+}
+
+.pages{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.page:not(:last-child){
+  margin-right: 5px;
+}
+
+.btn{
+  border: 1px solid rgb(148, 146, 146);
+  background-color: #fff;
+  border-radius: 20%;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.page__btn-active{
+  background-color: rgb(86, 123, 201);
+  color:#fff
+}
+
+.btn:hover{
+  color:black;
+  background-color: rgb(173, 166, 166);
+}
+
+.form{
+  margin: 0 auto;
+}
+
+.edit__form{
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 30%;
+}
+.lables{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.form-edit__lable{
+  flex: 1;
+  order:1;
+}
+
+.form-edit__input{
+  width: 95%;
+  margin: 8px 0;
+  padding: 6px 0px 9px 5px;
+}
+
+.form-edit__lable:not(:first-child){
+  padding-left: 25px;
+  
+}
+
+.form-edit__textarea{
+  width: 98%;
+  height: content;
+  margin: 8px 0;
+  padding: 8px 0 8px 8px;
+  resize: none;
+}
+
+.form-edit__lable-big{
+  order:2;
+  flex: 1 1 100%;
+  margin: 10px 0 0 0;
+}
+
+.form-edit__btn{
+  position: absolute;
+  top: 110%;
+  left:  30%;
+  background-color: rgb(86, 123, 201);
+  color: #fff;
+}
+
+
+.color__block{
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
